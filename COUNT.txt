@@ -1,0 +1,22 @@
+String jpql = "SELECT count(o) FROM Entidade o";
+Query q = entityManager.createQuery(jpql);
+Long count = (Long) q.getSingleResult();
+-----------------
+o que fiz e deu certo li na documentação qdo usa count
+sempre retorna um Long então
+
+
+/**
+	 * @see BaseDao#count() BaseDao.count()
+	 */
+    @SuppressWarnings("unchecked")
+	public int count() throws DaoException {
+    	Long resultado = new Long(0L);
+    	Query query = em.createQuery("select count(e) from " + domainClass.getName()+" e" );
+    	resultado = (Long) query.getSingleResult();
+    	return resultado.intValue();
+    }
+
+}
+
+---------------------------

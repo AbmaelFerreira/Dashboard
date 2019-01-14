@@ -11,14 +11,7 @@ public class WelcomeController {
 		@RequestMapping(value = "/", method = RequestMethod.GET)
 		public String welcome() {
 			
-			return "redirect:/usuario/todos";
-			//return "welcome";
-		}
+			return "redirect:/itemos/itemos";
 		
-		@RequestMapping(value = "/teste", method = RequestMethod.GET)
-		public ModelAndView teste() {
-			ModelAndView view = new ModelAndView("welcome");  
-			view.addObject("teste", "Olá eu sou o Spring MVC");
-			return view;
 		}
 }
