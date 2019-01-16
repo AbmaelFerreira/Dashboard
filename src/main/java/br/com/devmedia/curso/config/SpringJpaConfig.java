@@ -29,6 +29,17 @@ public class SpringJpaConfig {
         return ds;
         	//<!-- ?createDatabaseIfNotExist=true-->
     }
+	
+//	@Bean
+//  public DataSource dataSource() {
+//      DriverManagerDataSource ds = new DriverManagerDataSource();
+//      ds.setDriverClassName("oracle.jdbc.OracleDriver.class.getName()");
+//      ds.setUrl("jdbc:oracle:thin:@localhost:1521/XE");
+//      ds.setUsername("system");
+//      ds.setPassword("141620");
+//      return ds;
+//      	//<!-- ?createDatabaseIfNotExist=true-->
+//  }
 
     @Bean
     public EntityManagerFactory entityManagerFactory(DataSource dataSource) {
@@ -53,7 +64,7 @@ public class SpringJpaConfig {
         Properties props = new Properties();
         props.setProperty("hibernate.show_sql", "true");
         props.setProperty("hibernate.format_sql", "true");
-        //props.setProperty("hibernate.hbm2ddl.auto", "update");
+        props.setProperty("hibernate.hbm2ddl.auto", "update");
         return props;
     }
 }

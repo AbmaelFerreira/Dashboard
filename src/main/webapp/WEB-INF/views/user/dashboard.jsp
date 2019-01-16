@@ -7,6 +7,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
     <title>Dashboard</title>
+    
     <spring:url var="css" value="/static/css/bootstrap.css"/>
     <spring:url var="style" value="/static/css/style.css"/>
     

@@ -1,7 +1,6 @@
 package br.com.devmedia.curso.domain;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -44,8 +43,8 @@ public class ItemOs  implements Serializable{
 	
 	@Column(name = "dt_item_os", nullable = false )
 	@NotNull(message =  "O campo 'data de nascimento' é requerido")
-	@DateTimeFormat(iso = ISO.DATE)  //aula 14
-	private Date dtItemOs;	//aula 14
+	@DateTimeFormat(iso = ISO.DATE)  
+	private Date dtItemOs;	
 	
 	@Column(name = "cd_usuario", nullable = false, length = 50)
 	@NotBlank
@@ -53,10 +52,10 @@ public class ItemOs  implements Serializable{
 	private int idUsuario;
 	
 	
-		@Column(name = "cd_uni_de_neg", nullable = false, length = 50)
-		@NotBlank
-		@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
-		private int codigoUnidadeNeg;
+	@Column(name = "cd_uni_de_neg", nullable = false, length = 50)
+	@NotBlank
+	@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
+	private int codigoUnidadeNeg;
 	
 	
 	@Column(name = "descricao_recla", nullable = false, length = 50)
