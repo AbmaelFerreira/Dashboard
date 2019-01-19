@@ -8,6 +8,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cadastro de Usuarios</title>
 	 <spring:url var="css" value="/static/css/bootstrap.css"/>
     <link type="text/css" rel="stylesheet" href="${css }"/>
