@@ -18,7 +18,7 @@ public class ItemOsDaoImpl  implements ItemOsDao {
 	@Override
 	public Long getCount() {
 	
-		String jpql = "select count(o)from ItemOs o";
+		String jpql = "select count(*) from gmitemos o";
 		TypedQuery<Long> query = entityManager.createQuery(jpql, Long.class);
 		long total = query.getSingleResult();
 		return total;

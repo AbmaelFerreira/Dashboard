@@ -16,7 +16,7 @@ import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
-@Entity
+@Entity(name= "gmitemos")
 @Table(name = "gmitemos")
 public class ItemOs  implements Serializable{
 	
