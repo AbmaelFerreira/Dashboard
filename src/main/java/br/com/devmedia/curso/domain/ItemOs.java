@@ -22,9 +22,15 @@ public class ItemOs  implements Serializable{
 	
 	
 	private static final long serialVersionUID = 1L;
+	
+public ItemOs() {
+		
+	}
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;
+/*
+	
 	
 	@Column(nullable = false, length = 50)
 	@NotBlank
@@ -63,7 +69,7 @@ public class ItemOs  implements Serializable{
 	@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
 	private String descricao;
 	
-	
+	*/
 	
 	
 	
@@ -74,7 +80,7 @@ public class ItemOs  implements Serializable{
 		@Column(name = "tipo_sexo", nullable = false )
 		@Enumerated(EnumType.STRING)
 		private TipoSexo sexo;
-	*/
+	
 	
 	public Long getId() {
 		return id;
@@ -132,7 +138,7 @@ public class ItemOs  implements Serializable{
 				this.codigoUnidadeNeg = codigoUnidadeNeg;
 			}
 			
-
+/*
 	public String getDescricao() {
 		return descricao;
 	}
@@ -140,16 +146,15 @@ public class ItemOs  implements Serializable{
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+*/
 
 	/*  -----------EXEMPLO DE TIPO DE DATA -----------------
 		@Column(name = "data_nascimento", nullable = false )
 		@NotNull(message =  "O campo 'data de nascimento' é requerido")
 		@DateTimeFormat(iso = ISO.DATE)  //aula 14
 		private LocalDate dtNascimento;	//aula 14
-	*/
-	public ItemOs() {
-		
-	}
+	
+	
 
 	@Override
 	public String toString() {
@@ -157,6 +162,10 @@ public class ItemOs  implements Serializable{
 				+ ", dtItemOs=" + dtItemOs + ", idUsuario=" + idUsuario + ", codigoUnidadeNeg=" + codigoUnidadeNeg
 				+ ", descricao=" + descricao + "]";
 	}
+	
+	*/
+
+
 
 	@Override
 	public int hashCode() {
@@ -164,6 +173,11 @@ public class ItemOs  implements Serializable{
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
+	}
+
+	@Override
+	public String toString() {
+		return "ItemOs [id=" + id + "]";
 	}
 
 	@Override
@@ -183,6 +197,7 @@ public class ItemOs  implements Serializable{
 		return true;
 	}
 	
+		
 	
 	
 }
