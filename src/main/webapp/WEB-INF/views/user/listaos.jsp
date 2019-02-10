@@ -74,7 +74,7 @@
 	                              </div>
 	                            
 	                              <div class="panel-body"> <!-- O corpo do Painel 1-->
-	                                 <h3>${totalOS}</h3>
+	                                 <h3>${OsAbertas}</h3>
 	                              </div>
 	                         </div><!-- Fim do Painel1 -->
 	                        

@@ -27,6 +27,5 @@ CREATE TABLE usuarios (
   nome VARCHAR(50) NOT NULL,
   tipo_sexo VARCHAR(255) DEFAULT NULL,
   sobrenome  VARCHAR(50) NOT NULL
-
 )
 

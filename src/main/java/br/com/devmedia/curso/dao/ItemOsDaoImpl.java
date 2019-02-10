@@ -11,17 +11,26 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(readOnly = true)
 public class ItemOsDaoImpl  implements ItemOsDao {
 
-	
 	@PersistenceContext
 	private EntityManager entityManager;
 
 	@Override
-	public Long getCount() {
+	public Long OsAbertas() {
 	
 		String jpql = "select count(*) from gmitemos o";
 		TypedQuery<Long> query = entityManager.createQuery(jpql, Long.class);
 		long total = query.getSingleResult();
 		return total;
-    	
+	}
+	
+	public Long OsAbertaPorTipo () {
+
+		String jpql = "SELECT t.descricao, count(*) as QTD from gmitemos i, gmtipoos t\r\n" + 
+				"where i.tipo_os = t.tipo_os and i.situacao <> 'E' AND I.TIPO_OS NOT IN ('A','B')\r\n" + 
+				"group by t.descricao\r\n" + 
+				"order by t.descricao ";
+		TypedQuery<Long> query = entityManager.createQuery(jpql, Long.class);
+		long total = query.getSingleResult();
+		return total;
 	}
 }

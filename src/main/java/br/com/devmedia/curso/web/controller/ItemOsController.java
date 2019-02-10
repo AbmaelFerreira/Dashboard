@@ -10,18 +10,15 @@ import org.springframework.web.servlet.ModelAndView;
 import br.com.devmedia.curso.dao.ItemOsDao;
 
 @Controller
-@RequestMapping(/*value = */"itemos") //quado utiliza somente o value não precisa do value
+@RequestMapping( "/") //quado utiliza somente o value não precisa do value
 public class ItemOsController {
 	
 	@Autowired
 	private ItemOsDao dao; 
 	
-	
-	
-	
-	@RequestMapping(value = "/itemos", method = RequestMethod.GET)
+	@RequestMapping(value = "/os", method = RequestMethod.GET)
 	public ModelAndView listaTodos(ModelMap model) {
-		model.addAttribute("totalOS",dao.getCount());
+		model.addAttribute("OsAbertas",dao.OsAbertas());
 		
 		return new ModelAndView("/user/listaos", model);
 	}
