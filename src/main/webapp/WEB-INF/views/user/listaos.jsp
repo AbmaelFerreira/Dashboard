@@ -65,94 +65,95 @@
             
                 <div class="row"><!-- INICIO DA ROW -->
                 
-	   			       <div class="col-sm-4 text-center"> <!-- 1º Bloco -->
+	   			       <div class="col-sm-3 text-center"> <!-- 1º Bloco -->
 	   			     
 	                         <div class="panel panel-primary"><!-- Inicio do Painel 1 -->
 	                           
 	                              <div class="panel-heading"> <!-- Cabeçalho do Painel 1-->
-	                                 <h3 class="panel-title">OS ABERTAS</h3>
+	                                 <h3 class="panel-title">ABERTAS HOJE</h3>
 	                              </div>
 	                            
 	                              <div class="panel-body"> <!-- O corpo do Painel 1-->
 	                                 <h3>${OsAbertas}</h3>
 	                              </div>
+	                              
 	                         </div><!-- Fim do Painel1 -->
 	                        
 	                    </div> <!-- Fim do bloco 1 -->
                     
-                    <div class="col-sm-4 text-center"> <!-- 2º Bloco -->
+                    <div class="col-sm-3 text-center"> <!-- 2º Bloco -->
                         
                          <div class="panel panel-primary"> <!-- Inicio do Painel 2 -->
                            
                               <div class="panel-heading"> <!-- Cabeçalho do Painel 2-->
-                                 <h3 class="panel-title">Abmal</h3>
+                                 <h3 class="panel-title">ABERTAS NA SEMANA</h3>
                               </div>
                               	
                               <div class="panel-body"> <!-- O corpo do Painel 2 -->
-                                <h3>1000 </h3>
+                                <h3>${abertasSemana}</h3>
                               </div>
                             
                          </div> <!-- Fim do painel 2 -->
                         
                     </div> <!-- Fim do bloco 2 -->
                     
-                    <div class="col-sm-4 text-center"> <!-- 3º Bloco -->
+                    <div class="col-sm-3 text-center"> <!-- 3º Bloco -->
                     
                     			<div class="panel panel-success"> <!-- Inicio do Painel 3 -->
                             		
                             			<div class="panel-heading"> <!-- Cabeçalho do Painel 3 -->
-                                			<h3 class="panel-title">Anildo</h3>
+                                			<h3 class="panel-title">ABERTA NO MÊS</h3>
                             			</div>
                             				
                             			<div class="panel-body">  <!-- O corpo do Painel 3-->
-                                			<h3>13.050</h3>
+                                			<h3>${abertasMes}</h3>
                             			</div>
                             			
                         		</div> <!-- Fim do painel 3-->
                     	</div>
                     
-                    	<div class="col-sm-4 text-center"> <!-- 4º Bloco -->
+                    	<div class="col-sm-3 text-center"> <!-- 4º Bloco -->
                         		
                         		<div class="panel panel-danger">  <!-- Inicio do Painel 4 -->
                             		
                             			<div class="panel-heading"> <!-- Cabeçalho do Painel 4 -->
-                                			<h3 class="panel-title">Carlos</h3>
+                                			<h3 class="panel-title">ABERTA NO ANO</h3>
                             			</div>
                             
                             			<div class="panel-body"> <!-- O corpo do Painel 4 -->
-                                			<h3>22%</h3>
+                                			<h3>${abertaAno}</h3>
                             			</div>
                         
                         		</div> <!-- Fim do painel 4-->
                         		
                     </div><!-- Fim do bloco 4 -->
                     
-                    <div class="col-sm-4 text-center"> <!-- 5 º Bloco -->
+                    <div class="col-sm-3 text-center"> <!-- 5 º Bloco -->
                         		
                         		<div class="panel panel-danger"> <!-- Inicio do Painel 5 -->
                             		
                             		<div class="panel-heading">   <!-- Cabeçalho do Painel 5 -->
-                                		<h3 class="panel-title">André</h3>
+                                		<h3 class="panel-title">FECHADO HOJE</h3>
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 4 -->
-                                		<h3>22%</h3>
+                                		<h3>${fechadoHoje}</h3>
                             		</div>
                             	
                         		</div>   <!-- Fim do painel 5-->
                         		
                     </div> <!-- Fim do bloco 5 -->
                     
-                    <div class="col-sm-4 text-center"> <!-- 6 º Bloco -->
+                    <div class="col-sm-3 text-center"> <!-- 6 º Bloco -->
                         		
                         		<div class="panel panel-danger"> <!-- Inicio do Painel 6 -->
                             		
                             		<div class="panel-heading">   <!-- Cabeçalho do Painel 6 -->
-                                		<h3 class="panel-title">William</h3>
+                                		<h3 class="panel-title">FECHADO SEMANA</h3>
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 6 -->
-                                		<h3>22%</h3>
+                                		<h3>${fechadoSemana}</h3>
                             		</div>
                             	
                         		</div>   <!-- Fim do painel 6-->
@@ -161,21 +162,37 @@
                     
                     
                     
-                    <div class="col-sm-4 text-center"> <!-- 7 º Bloco -->
+                    <div class="col-sm-3 text-center"> <!-- 7 º Bloco -->
                         		
                         		<div class="panel panel-danger"> <!-- Inicio do Painel 7 -->
                             		
                             		<div class="panel-heading">   <!-- Cabeçalho do Painel 7 -->
-                                		<h3 class="panel-title">André</h3>
+                                		<h3 class="panel-title">FECHADO MES</h3>
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 7 -->
-                                		<h3>22%</h3>
+                                		<h3>${fechadoMes}</h3>
                             		</div>
                             	
                         		</div>   <!-- Fim do painel 7-->
                         		
                     </div> <!-- Fim do bloco 7 -->
+                    
+                    <div class="col-sm-3 text-center"> <!-- 8 º Bloco -->
+                        		
+                        		<div class="panel panel-danger"> <!-- Inicio do Painel 8 -->
+                            		
+                            		<div class="panel-heading">   <!-- Cabeçalho do Painel 8 -->
+                                		<h3 class="panel-title">FECHADO ANO</h3>
+                            		</div>
+                            		
+                            		<div class="panel-body"> <!-- O corpo do Painel 8 -->
+                                		<h3>${fechadoAno}</h3>
+                            		</div>
+                            	
+                        		</div>   <!-- Fim do painel 8-->
+                        		
+                    </div> <!-- Fim do bloco 8 -->
                
                 </div> <!-- FIM DA ROW  -->
                 
