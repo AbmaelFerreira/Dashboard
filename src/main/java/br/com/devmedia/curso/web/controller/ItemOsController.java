@@ -17,11 +17,18 @@ public class ItemOsController {
 	private ItemOsDao dao; 
 	
 	@RequestMapping(value = "/os", method = RequestMethod.GET)
-	public ModelAndView listaTodos(ModelMap model) {
+	public ModelAndView AbertaNoDia(ModelMap model) {
 		model.addAttribute("OsAbertas",dao.OsAbertas());
 		
 		return new ModelAndView("/user/listaos", model);
 	}
+	
+//	@RequestMapping(value = "/os", method = RequestMethod.GET)
+//	public ModelAndView AbertaSemana(ModelMap model) {
+//		model.addAttribute("abertasSemana",dao.AbertasSemana());
+//		
+//		return new ModelAndView("/user/listaos", model);
+//	}
 }
 
 

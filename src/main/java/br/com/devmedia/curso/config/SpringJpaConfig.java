@@ -30,15 +30,26 @@ public class SpringJpaConfig {
 //        	// ?createDatabaseIfNotExist=true
 //    }
 	
+//	@Bean
+//  public DataSource dataSource() {
+//      DriverManagerDataSource ds = new DriverManagerDataSource();
+//      ds.setDriverClassName("oracle.jdbc.OracleDriver");
+//      ds.setUrl("jdbc:oracle:thin:@localhost:1521/XE");
+//      ds.setUsername("system");
+//      ds.setPassword("141620");
+//      return ds;
+      	//<!-- ?createDatabaseIfNotExist=true-->
+  //}
+	
 	@Bean
   public DataSource dataSource() {
       DriverManagerDataSource ds = new DriverManagerDataSource();
       ds.setDriverClassName("oracle.jdbc.OracleDriver");
-      ds.setUrl("jdbc:oracle:thin:@localhost:1521/XE");
-      ds.setUsername("system");
-      ds.setPassword("141620");
+      ds.setUrl("jdbc:oracle:thin:@10.0.0.9:1521:TESTE");
+      ds.setUsername("cigamteste");
+      ds.setPassword("cigamteste");
       return ds;
-      	//<!-- ?createDatabaseIfNotExist=true-->
+      	
   }
 
     @Bean

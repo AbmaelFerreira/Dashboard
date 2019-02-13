@@ -90,7 +90,7 @@
                               </div>
                               	
                               <div class="panel-body"> <!-- O corpo do Painel 2 -->
-                                <h3>${abertasSemana}</h3>
+                                <h3></h3>
                               </div>
                             
                          </div> <!-- Fim do painel 2 -->
@@ -106,7 +106,7 @@
                             			</div>
                             				
                             			<div class="panel-body">  <!-- O corpo do Painel 3-->
-                                			<h3>${abertasMes}</h3>
+                                			<h3></h3>
                             			</div>
                             			
                         		</div> <!-- Fim do painel 3-->
@@ -121,7 +121,7 @@
                             			</div>
                             
                             			<div class="panel-body"> <!-- O corpo do Painel 4 -->
-                                			<h3>${abertaAno}</h3>
+                                			<h3></h3>
                             			</div>
                         
                         		</div> <!-- Fim do painel 4-->
@@ -137,7 +137,7 @@
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 4 -->
-                                		<h3>${fechadoHoje}</h3>
+                                		<h3></h3>
                             		</div>
                             	
                         		</div>   <!-- Fim do painel 5-->
@@ -153,7 +153,7 @@
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 6 -->
-                                		<h3>${fechadoSemana}</h3>
+                                		<h3></h3>
                             		</div>
                             	
                         		</div>   <!-- Fim do painel 6-->
@@ -171,7 +171,7 @@
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 7 -->
-                                		<h3>${fechadoMes}</h3>
+                                		<h3></h3>
                             		</div>
                             	
                         		</div>   <!-- Fim do painel 7-->
@@ -187,7 +187,7 @@
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 8 -->
-                                		<h3>${fechadoAno}</h3>
+                                		<h3></h3>
                             		</div>
                             	
                         		</div>   <!-- Fim do painel 8-->
@@ -206,7 +206,7 @@
        <!-------------- Inicio do Rodape -->
     
     	<footer class="footer">
-        <p>&copy; 2018 Abmael</p>
+        <p>&copy; 2019 Abmael BETA</p>
     	</footer>
     
     		<!-- -----------Arquivo de Script e CSS -->

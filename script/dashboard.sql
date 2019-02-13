@@ -24,3 +24,22 @@ insert into gmitemos values (7,1,1,'iniciada','2018/12/25',4,001,'Fazer testes')
 
 
 select * from usuarios
+alter table gmitemos add cd_numero_os int
+update gmitemos set cd_numero_os = 7 where id=7
+
+create table gmoservi
+(cd_numero_os numeric(10)
+
+)
+
+create table gmtipoos
+(tipo_os varchar(40)
+
+)
+
+select * from gmoservi
+insert into gmoservi values (100);
+select * from gmtipoos
+insert into gmtipoos values ('PRIMERIO ATENDIMENTO');
+
+select count(*) from gmitemos o

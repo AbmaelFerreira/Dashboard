@@ -27,7 +27,9 @@ public ItemOs() {
 		
 	}
 
-@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+//@Column(name="CD_NUMERO_OS")
+@Id
 private Long id;
 /*
 	
