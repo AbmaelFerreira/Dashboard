@@ -5,6 +5,8 @@ public interface ItemOsDao {
 
 	Long OsAbertas();
 
+	Long AbertasHoje();
+
 	//Long AbertasSemana();
 
 //	Long OsAbertaPorTipo();

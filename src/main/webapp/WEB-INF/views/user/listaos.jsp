@@ -70,7 +70,7 @@
 	                         <div class="panel panel-primary"><!-- Inicio do Painel 1 -->
 	                           
 	                              <div class="panel-heading"> <!-- Cabeçalho do Painel 1-->
-	                                 <h3 class="panel-title">ABERTAS HOJE</h3>
+	                                 <h3 class="panel-title">OS ABERTAS </h3>
 	                              </div>
 	                            
 	                              <div class="panel-body"> <!-- O corpo do Painel 1-->
@@ -86,11 +86,11 @@
                          <div class="panel panel-primary"> <!-- Inicio do Painel 2 -->
                            
                               <div class="panel-heading"> <!-- Cabeçalho do Painel 2-->
-                                 <h3 class="panel-title">ABERTAS NA SEMANA</h3>
+                                 <h3 class="panel-title">ABERTAS HOJE</h3>
                               </div>
                               	
                               <div class="panel-body"> <!-- O corpo do Painel 2 -->
-                                <h3></h3>
+                                <h3>${AbertasHoje }</h3>
                               </div>
                             
                          </div> <!-- Fim do painel 2 -->
@@ -102,7 +102,7 @@
                     			<div class="panel panel-success"> <!-- Inicio do Painel 3 -->
                             		
                             			<div class="panel-heading"> <!-- Cabeçalho do Painel 3 -->
-                                			<h3 class="panel-title">ABERTA NO MÊS</h3>
+                                			<h3 class="panel-title">ABERTA NA SEMANA</h3>
                             			</div>
                             				
                             			<div class="panel-body">  <!-- O corpo do Painel 3-->
@@ -117,7 +117,7 @@
                         		<div class="panel panel-danger">  <!-- Inicio do Painel 4 -->
                             		
                             			<div class="panel-heading"> <!-- Cabeçalho do Painel 4 -->
-                                			<h3 class="panel-title">ABERTA NO ANO</h3>
+                                			<h3 class="panel-title">ABERTA NO MÊS</h3>
                             			</div>
                             
                             			<div class="panel-body"> <!-- O corpo do Painel 4 -->
@@ -133,7 +133,7 @@
                         		<div class="panel panel-danger"> <!-- Inicio do Painel 5 -->
                             		
                             		<div class="panel-heading">   <!-- Cabeçalho do Painel 5 -->
-                                		<h3 class="panel-title">FECHADO HOJE</h3>
+                                		<h3 class="panel-title">ABERTAS NO ANO</h3>
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 4 -->
@@ -149,7 +149,7 @@
                         		<div class="panel panel-danger"> <!-- Inicio do Painel 6 -->
                             		
                             		<div class="panel-heading">   <!-- Cabeçalho do Painel 6 -->
-                                		<h3 class="panel-title">FECHADO SEMANA</h3>
+                                		<h3 class="panel-title">FECHADOS HOJE</h3>
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 6 -->
@@ -167,7 +167,7 @@
                         		<div class="panel panel-danger"> <!-- Inicio do Painel 7 -->
                             		
                             		<div class="panel-heading">   <!-- Cabeçalho do Painel 7 -->
-                                		<h3 class="panel-title">FECHADO MES</h3>
+                                		<h3 class="panel-title">FECHADO NA SEMANA</h3>
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 7 -->
@@ -183,7 +183,7 @@
                         		<div class="panel panel-danger"> <!-- Inicio do Painel 8 -->
                             		
                             		<div class="panel-heading">   <!-- Cabeçalho do Painel 8 -->
-                                		<h3 class="panel-title">FECHADO ANO</h3>
+                                		<h3 class="panel-title">FECHADO NO MÊS</h3>
                             		</div>
                             		
                             		<div class="panel-body"> <!-- O corpo do Painel 8 -->
@@ -193,6 +193,23 @@
                         		</div>   <!-- Fim do painel 8-->
                         		
                     </div> <!-- Fim do bloco 8 -->
+                    
+                    
+                    <div class="col-sm-3 text-center"> <!-- 9 º Bloco -->
+                        		
+                        		<div class="panel panel-danger"> <!-- Inicio do Painel 9 -->
+                            		
+                            		<div class="panel-heading">   <!-- Cabeçalho do Painel 9 -->
+                                		<h3 class="panel-title">FECHADO NO MÊS</h3>
+                            		</div>
+                            		
+                            		<div class="panel-body"> <!-- O corpo do Painel 9 -->
+                                		<h3></h3>
+                            		</div>
+                            	
+                        		</div>   <!-- Fim do painel 9-->
+                        		
+                    </div> <!-- Fim do bloco 9 -->
                
                 </div> <!-- FIM DA ROW  -->
                 

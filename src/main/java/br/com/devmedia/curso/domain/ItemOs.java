@@ -21,166 +21,54 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 public class ItemOs  implements Serializable{
 	
 	
-	private static final long serialVersionUID = 1L;
+private static final long serialVersionUID = 1L;
 	
-public ItemOs() {
-		
-	}
-
-
-//@Column(name="CD_NUMERO_OS")
 @Id
 private Long id;
-/*
-	
-	
-	@Column(nullable = false, length = 50)
-	@NotBlank
-	@Size(min = 5, max = 20)
-	private int item;
-	
-	@Column(name = "cd_tipo", nullable = false, length = 50)
-	@NotBlank
-	@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
-	private int codigoTipo;
-	
-	@Column(nullable = false, length = 50)
-	@NotBlank
-	@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
-	private String situacao;
-	
-	@Column(name = "dt_item_os", nullable = false )
-	@NotNull(message =  "O campo 'data de nascimento' é requerido")
-	@DateTimeFormat(iso = ISO.DATE)  
-	private Date dtItemOs;	
-	
-	@Column(name = "cd_usuario", nullable = false, length = 50)
-	@NotBlank
-	@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
-	private int idUsuario;
-	
-	
-	@Column(name = "cd_uni_de_neg", nullable = false, length = 50)
-	@NotBlank
-	@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
-	private int codigoUnidadeNeg;
-	
-	
-	@Column(name = "descricao_recla", nullable = false, length = 50)
-	@NotBlank
-	@Size(min = 5, max = 20, message = "Campo requerido entre {min} e {max} caracteres")
-	private String descricao;
-	
-	*/
-	
-	
-	
-	
-	
-	
-	/*  -------------EXEMPLO DE COMBOBOX ----------
-		@Column(name = "tipo_sexo", nullable = false )
-		@Enumerated(EnumType.STRING)
-		private TipoSexo sexo;
-	
-	
-	public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+@Column(name="CD_NUMERO_OS", nullable = false, length = 6)
+@NotBlank
+@Size(min = 5, max = 6)
+private int cd_numero_os;
 
-	public int getItem() {
-		return item;
-	}
 
-	public void setItem(int item) {
-		this.item = item;
-	}
 
-	public int getCodigoTipo() {
-		return codigoTipo;
-	}
-
-	public void setCodigoTipo(int codigoTipo) {
-		this.codigoTipo = codigoTipo;
-	}
-
-	public String getSituacao() {
-		return situacao;
-	}
-
-	public void setSituacao(String situacao) {
-		this.situacao = situacao;
-	}
-
-	public Date getDtItemOs() {
-		return dtItemOs;
-	}
-
-	public void setDtItemOs(Date dtItemOs) {
-		this.dtItemOs = dtItemOs;
-	}
-
-	public int getIdUsuario() {
-		return idUsuario;
-	}
-
-	public void setIdUsuario(int idUsuario) {
-		this.idUsuario = idUsuario;
-	}
-
-			public int getCodigoUnidadeNeg() {
-				return codigoUnidadeNeg;
-			}
-		
-			public void setCodigoUnidadeNeg(int codigoUnidadeNeg) {
-				this.codigoUnidadeNeg = codigoUnidadeNeg;
-			}
-			
-/*
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-*/
-
-	/*  -----------EXEMPLO DE TIPO DE DATA -----------------
-		@Column(name = "data_nascimento", nullable = false )
-		@NotNull(message =  "O campo 'data de nascimento' é requerido")
-		@DateTimeFormat(iso = ISO.DATE)  //aula 14
-		private LocalDate dtNascimento;	//aula 14
+public ItemOs() {
 	
-	
+}
 
-	@Override
-	public String toString() {
-		return "ItemOs [id=" + id + ", item=" + item + ", codigoTipo=" + codigoTipo + ", situacao=" + situacao
-				+ ", dtItemOs=" + dtItemOs + ", idUsuario=" + idUsuario + ", codigoUnidadeNeg=" + codigoUnidadeNeg
-				+ ", descricao=" + descricao + "]";
-	}
-	
-	*/
+
+	public int getCd_numero_os() {
+	return cd_numero_os;
+}
+
+
+public void setCd_numero_os(int cd_numero_os) {
+	this.cd_numero_os = cd_numero_os;
+}
+
+
+
 
 
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = 1;
+	int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
+	
+	
+	
+	
+	
 
 	@Override
 	public String toString() {
 		return "ItemOs [id=" + id + "]";
-	}
+}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -199,7 +87,8 @@ private Long id;
 		return true;
 	}
 	
-		
+	
+	
 	
 	
 }

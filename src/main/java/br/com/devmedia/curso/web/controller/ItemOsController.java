@@ -19,16 +19,14 @@ public class ItemOsController {
 	@RequestMapping(value = "/os", method = RequestMethod.GET)
 	public ModelAndView AbertaNoDia(ModelMap model) {
 		model.addAttribute("OsAbertas",dao.OsAbertas());
+		model.addAttribute("AbertasHoje",dao.AbertasHoje());
 		
 		return new ModelAndView("/user/listaos", model);
 	}
 	
-//	@RequestMapping(value = "/os", method = RequestMethod.GET)
-//	public ModelAndView AbertaSemana(ModelMap model) {
-//		model.addAttribute("abertasSemana",dao.AbertasSemana());
-//		
-//		return new ModelAndView("/user/listaos", model);
-//	}
+
+	
+
 }
 
 
