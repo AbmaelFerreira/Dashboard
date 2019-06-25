@@ -43,3 +43,5 @@ select * from gmtipoos
 insert into gmtipoos values ('PRIMERIO ATENDIMENTO');
 
 select count(*) from gmitemos o
+
+select * from gmoservi
