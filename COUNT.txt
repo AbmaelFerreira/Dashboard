@@ -2,13 +2,13 @@ String jpql = "SELECT count(o) FROM Entidade o";
 Query q = entityManager.createQuery(jpql);
 Long count = (Long) q.getSingleResult();
 -----------------
-o que fiz e deu certo li na documentaÁ„o qdo usa count
-sempre retorna um Long ent„o
+o que fiz e deu certo li na documenta√ß√£o qdo usa count
+sempre retorna um Long ent√£o
 
 
 /**
 	 * @see BaseDao#count() BaseDao.count()
-	 */
+	 Esse m√©todo retorna todas as os criadas */
     @SuppressWarnings("unchecked")
 	public int count() throws DaoException {
     	Long resultado = new Long(0L);
